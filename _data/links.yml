@@ -1,0 +1,33 @@
+sections:
+  - id: comm
+    title: "Comm"
+    icon: "💬"
+    description: "Messages & conversations."
+    links:
+      - label: "Gmail"
+        url: "https://gmail.com/"
+        hint: "Email"
+      - label: "WhatsApp Web"
+        url: "https://web.whatsapp.com/"
+        hint: "Chats"
+
+  - id: fun
+    title: "Fun"
+    icon: "🎮"
+    description: "Have fun section."
+    links:
+      - label: "Youtube"
+        url: "https://youtube.com/"
+        hint: ""
+      - label: "Instagram"
+        url: "https://instagram.com/"
+        hint: ""
+
+  - id: others
+    title: "Others"
+    icon: "🗺️"
+    description: "Everything else useful."
+    links:
+      - label: "Google Maps"
+        url: "https://www.google.com/maps"
+        hint: "Maps & directions"

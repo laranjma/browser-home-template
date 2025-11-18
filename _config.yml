@@ -1,0 +1,10 @@
+title: "My Start Page"
+description: "Personal browser start page"
+baseurl: "" # do not change if using as a local file or root of a small site
+url: ""     # not needed for local use
+
+# No theme so we fully control the design
+markdown: kramdown
+
+# Optional: nice permalink style if you add other pages later
+permalink: pretty

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Google Font (optional, but makes it look nicer) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"-->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="site-title-block">
+        <h1 class="site-title">Welcome 👋</h1>
+        <p class="site-subtitle">Quick access to what matters, every time you open your browser.</p>
+      </div>
+      <div class="site-meta">
+        <div class="clock" id="clock"></div>
+        <div class="day" id="day"></div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <small>Personal homepage · Powered by Jekyll</small>
+    </footer>
+  </div>
+
+  <script>
+    // Simple local clock
+    function updateClock() {
+      const now = new Date();
+      const optionsTime = { hour: '2-digit', minute: '2-digit' };
+      const optionsDay = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+      document.getElementById('clock').textContent = now.toLocaleTimeString([], optionsTime);
+      document.getElementById('day').textContent = now.toLocaleDateString([], optionsDay);
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
