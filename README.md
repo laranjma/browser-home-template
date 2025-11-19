@@ -3,7 +3,7 @@ A minimal, fast personal homepage built with  to use as your browser start page.
 
 # 🌟 Jekyll Startpage — A Beautiful Personal Browser Homepage
 
-A clean, modern, data-driven startpage built with Je[Jekyll](https://jekyllrb.com/)kyll.
+A clean, modern, data-driven startpage built with [Jekyll](https://jekyllrb.com/).
 Use it as your browser’s homepage or as a lightweight personal dashboard.
 
 ## 🚀 Features
