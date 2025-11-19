@@ -209,5 +209,3 @@ This is great if:
 
 - You want to keep styling & layout upstream
 - And only override _data/links.yml
-
-If you want help making the repo fully “theme-ready,” let me know.
