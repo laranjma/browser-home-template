@@ -27,7 +27,8 @@ Use it as your browser’s homepage or as a lightweight personal dashboard.
 
 ### Video Demo
 
-<video src="assets/media/homepage_screencast_251119.webm" width="600" autoplay loop muted></video>
+
+![Demo Preview](assets/media/homepage_screencast_251119.gif)
 
 ---
 
