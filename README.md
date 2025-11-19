@@ -196,16 +196,3 @@ Icons are stored in the icon field of each section, example:
 icon: "💬"
 ```
 You can replace these with any emoji, that you can get in https://emojipedia.org/, for example.
-
-## 📦 Using as a Remote Theme (Optional)
-
-You can make this project usable as a remote Jekyll theme by adding this to a repo’s `_config.yml`:
-
-```yaml
-remote_theme: <your-username>/<your-repo>
-```
-
-This is great if:
-
-- You want to keep styling & layout upstream
-- And only override _data/links.yml
