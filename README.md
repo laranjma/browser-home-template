@@ -1,17 +1,33 @@
-# Personal Jekyll Start Page
 
-A minimal, fast personal homepage built with [Jekyll](https://jekyllrb.com/) to use as your browser start page.  
-All sections and links are defined in a single YAML file so you can maintain everything easily.
+A minimal, fast personal homepage built with  to use as your browser start page.  
 
----
+# 🌟 Jekyll Startpage — A Beautiful Personal Browser Homepage
+
+A clean, modern, data-driven startpage built with Je[Jekyll](https://jekyllrb.com/)kyll.
+Use it as your browser’s homepage or as a lightweight personal dashboard.
 
 ## 🚀 Features
 
-- Clean, dark, minimal layout
-- Custumable sections
-- All links & section titles stored in **only one place**: `_data/links.yml`
-- Live local clock and date in the header
-- Responsive design (works nicely on different screen sizes)
+✨ Elegant card-based layout
+
+🗂 Fully data-driven via _data/links.yml
+
+🌎 All links & section titles stored in **only one place**: `_data/links.yml`
+
+📱 Responsive design
+
+🎨 Easy to customize (CSS & YAML)
+
+🕒 Local clock and date
+
+😎 Ready to use for beginners
+
+🔧 Can be used as a GitHub template or Jekyll remote theme
+
+
+### Video Demo
+
+<video src="assets/media/homepage_screencast_251119.webm" width="600" autoplay loop muted></video>
 
 ---
 
@@ -60,10 +76,49 @@ startpage/
         ```
         Then set your browser homepage to the generated file: `startpage/_site/index.html`.
 
+## 🚀 Quick Start (Using as a Template)
+
+If you're viewing this on GitHub:
+
+**1.** Click **Use this template** (big green button on the repo page)
+
+**2.** Choose **Create a new repository**
+
+**3.** Clone your newly created repo:
+  ```
+  git clone https://github.com/<your-username>/<your-repo>.git
+  ```
+
+**4.** Install dependencies:
+  ```
+  gem install bundler jekyll
+  ```
+
+**5.** Run the site on local:
+
+  ```
+  bundle exec jekyll serve
+  ```
+
+**6.** Open your browser and go to:
+  ```
+  localhost:4000
+  ```
+  Use and test your homepage.
+
+**7.** Stop the serve (step 5) and build the final version of your homepage:
+  ```
+  JEKYLL_ENV=production bundle exec jekyll build
+  ```
+
+**8.** Finally, on your browser configurations, set your homepage to the generated file: `<root_path_to_your_homepage>/_site/index.html` and you’re done! 🎉
+
 
 ## 🧩 How the Data Works
 
-All sections and links are defined in: `_data/links.yml`.
+All sections and links are defined in: `_data/links.yml`. To add or modify links, you **only edit this file**.
+
+No HTML/CSS changes required. No coding needed.
 
 Example:
 ```text
@@ -141,3 +196,18 @@ Icons are stored in the icon field of each section, example:
 icon: "💬"
 ```
 You can replace these with any emoji, that you can get in https://emojipedia.org/, for example.
+
+## 📦 Using as a Remote Theme (Optional)
+
+You can make this project usable as a remote Jekyll theme by adding this to a repo’s `_config.yml`:
+
+```yaml
+remote_theme: <your-username>/<your-repo>
+```
+
+This is great if:
+
+- You want to keep styling & layout upstream
+- And only override _data/links.yml
+
+If you want help making the repo fully “theme-ready,” let me know.
